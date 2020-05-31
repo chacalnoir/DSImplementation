@@ -1,0 +1,1 @@
+This python package contains several Demspter-Shafer combination algorithms written in a consistent manner for easily switching between them.  Unit test cases are also included, which demonstrate how to use the algorithms.

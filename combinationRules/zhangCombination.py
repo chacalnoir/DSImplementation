@@ -88,7 +88,7 @@ def multi_combination(evidence, all_data=None, weights=None):
     for evidence_key in evidence.keys():
         all_data["last_evidence"] = {}  # Reset
         all_data["evidence"][all_data["number_of_evidences"]] = deepcopy(evidence[evidence_key])
-        for input_key in all_data["evidence"][all_data["number_of_evidences"]]:
+        for input_key in evidence[evidence_key]:
             # Convert any keys that aren't tuples to tuples
             if isinstance(input_key, tuple) is False:
                 # Convert to a tuple
